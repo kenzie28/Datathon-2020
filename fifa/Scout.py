@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 
 # Load all datasets
-y15 = pd.read_csv("players_15.csv")
-y16 = pd.read_csv("players_16.csv")
-y17 = pd.read_csv("players_17.csv")
-y18 = pd.read_csv("players_18.csv")
-y19 = pd.read_csv("players_19.csv")
-y20 = pd.read_csv("players_20.csv")
+y15 = pd.read_csv("original_15.csv")
+y16 = pd.read_csv("original_16.csv")
+y17 = pd.read_csv("original_17.csv")
+y18 = pd.read_csv("original_18.csv")
+y19 = pd.read_csv("original_19.csv")
+y20 = pd.read_csv("original_20.csv")
 teams_leagues = pd.read_csv("teams_and_leagues.csv")
 
 # Place datasets into a list for convenience
