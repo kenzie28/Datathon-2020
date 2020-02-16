@@ -43,25 +43,25 @@ error = model.evaluate(x_test, y_test, verbose=0)
 print('MSE: %.3f, RMSE: %.3f' % (error, np.sqrt(error)))
 
 print("Input overall: ")
-overall = (input() - 66.97467291883756) / 6.879008402727097
+overall = (int(input()) - 66.97467291883756) / 6.879008402727097
 
 print("Input player age: ")
-age = (input() - 24.890963297441242) / 4.331509309626816
+age = (int(input()) - 24.890963297441242) / 4.331509309626816
 
 print("Input player shooting stat: ")
-shooting = (input() - 52.94455540118096) / 14.049862406642577
+shooting = (int(input()) - 52.94455540118096) / 14.049862406642577
 
 print("Input player passing stat: ")
-passing = (input() - 57.84677839527614) / 10.57396927130625
+passing = (int(input()) - 57.84677839527614) / 10.57396927130625
 
 print("Input player dribbling stat: ")
-dribbling = (input() - 62.87407375246035) / 10.512036950280264
+dribbling = (int(input()) - 62.87407375246035) / 10.512036950280264
 
 print("Input player physic: ")
-physic = (input() - 65.7168432326039) / 9.583705626210728
+physic = (int(input()) - 65.7168432326039) / 9.583705626210728
 
 print("Input player predicted growth: ")
-pred_growth = (input() - 4.922238624522404) / 5.046966889427111
+pred_growth = (int(input()) - 4.922238624522404) / 5.046966889427111
 
 new_data = [overall, age, shooting, passing, dribbling, physic, pred_growth]
 yhat = model.predict([new_data])
